@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: @project.artifactId@
+  profiles:
+    active: dev
+server:
+  port: 8090
+  ssl:
+    clientAuth: want
+    protocol: TLS
+    enabled: false
+endpoints:
+  enabled: false
+  info:
+    enabled: true
+  health:
+    enabled: true
