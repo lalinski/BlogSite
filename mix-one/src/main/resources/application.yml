@@ -9,6 +9,13 @@ server:
     clientAuth: want
     protocol: TLS
     enabled: false
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/javascript,text/css,text/plain,application/javascript
+    min-response-size: 2048
+    excluded-user-agents: gozilla,traviata
+  session:
+    timeout: 7200
 endpoints:
   enabled: false
   info:
