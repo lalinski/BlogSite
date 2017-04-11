@@ -31,6 +31,23 @@ public class IndexController {
     public String home(Model model) {
         SimpleDateFormat formatter = TimeFormatUtil.getFormatter(TimeFormatUtil.EXTENDED_CALENDAR_DATES_TIMES);
         model.addAttribute("dataTime", formatter.format(new Date()));
-        return "index/home";
+        return "index/index";
+    }
+
+
+    @RequestMapping("/logined")
+    public String userIndex() {
+        return "logined";
+    }
+
+    @RequestMapping("/login")
+    public String login() {
+        return "login";
+    }
+
+    @RequestMapping("/login-error")
+    public String loginError(Model model) {
+        model.addAttribute("loginError", true);
+        return "login";
     }
 }

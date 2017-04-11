@@ -1,0 +1,906 @@
+2017-04-10 21:08:17.616  INFO 13744--- [  restartedMain] c.l.test.site.blog.mix.one.Application   48 : Starting Application on FRZHAO-LT with PID 13744 (C:\Users\frzhao\workspace\IdeaProjects\BlogSite\mix-one\target\classes started by frzhao in C:\Users\frzhao\workspace\IdeaProjects\BlogSite)
+2017-04-10 21:08:17.621  INFO 13744--- [  restartedMain] c.l.test.site.blog.mix.one.Application   666 : The following profiles are active: dev
+2017-04-10 21:08:18.065  INFO 13744--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 582 : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@447caf00: startup date [Mon Apr 10 21:08:18 CST 2017]; root of context hierarchy
+2017-04-10 21:08:21.583  INFO 13744--- [  restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer 89 : Tomcat initialized with port(s): 8090 (http)
+2017-04-10 21:08:21.603  INFO 13744--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Starting service Tomcat
+2017-04-10 21:08:21.605  INFO 13744--- [  restartedMain] org.apache.catalina.core.StandardEngine  179 : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-10 21:08:21.741  INFO 13744--- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       179 : Initializing Spring embedded WebApplicationContext
+2017-04-10 21:08:21.742  INFO 13744--- [ost-startStop-1] o.s.web.context.ContextLoader            276 : Root WebApplicationContext: initialization completed in 3677 ms
+2017-04-10 21:08:22.238  INFO 13744--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'metricsFilter' to: [/*]
+2017-04-10 21:08:22.240  INFO 13744--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-10 21:08:22.241  INFO 13744--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-10 21:08:22.242  INFO 13744--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-10 21:08:22.243  INFO 13744--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-10 21:08:22.244  INFO 13744--- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean 258 : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-10 21:08:22.245  INFO 13744--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-04-10 21:08:22.245  INFO 13744--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-04-10 21:08:22.246  INFO 13744--- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  190 : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-10 21:08:22.686  WARN 13744--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 550 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+2017-04-10 21:08:22.689  INFO 13744--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Stopping service Tomcat
+2017-04-10 21:08:22.710  INFO 13744--- [  restartedMain] utoConfigurationReportLoggingInitializer 101 : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-10 21:08:22.716 ERROR 13744--- [  restartedMain] o.s.boot.SpringApplication               840 : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176)
+	at com.lalin.test.site.blog.mix.one.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.username(UserDetailsManagerConfigurer.java:111)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.access$200(UserDetailsManagerConfigurer.java:81)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer.withUser(UserDetailsManagerConfigurer.java:72)
+	at com.lalin.test.site.blog.mix.one.controller.SecurityConfig.configureGlobal(SecurityConfig.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:701)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 22 common frames omitted
+
+2017-04-10 21:12:59.521  INFO 15864--- [  restartedMain] c.l.test.site.blog.mix.one.Application   48 : Starting Application on FRZHAO-LT with PID 15864 (C:\Users\frzhao\workspace\IdeaProjects\BlogSite\mix-one\target\classes started by frzhao in C:\Users\frzhao\workspace\IdeaProjects\BlogSite)
+2017-04-10 21:12:59.526  INFO 15864--- [  restartedMain] c.l.test.site.blog.mix.one.Application   666 : The following profiles are active: dev
+2017-04-10 21:12:59.992  INFO 15864--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 582 : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@447caf00: startup date [Mon Apr 10 21:12:59 CST 2017]; root of context hierarchy
+2017-04-10 21:13:03.257  INFO 15864--- [  restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer 89 : Tomcat initialized with port(s): 8090 (http)
+2017-04-10 21:13:03.279  INFO 15864--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Starting service Tomcat
+2017-04-10 21:13:03.281  INFO 15864--- [  restartedMain] org.apache.catalina.core.StandardEngine  179 : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-10 21:13:03.456  INFO 15864--- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       179 : Initializing Spring embedded WebApplicationContext
+2017-04-10 21:13:03.457  INFO 15864--- [ost-startStop-1] o.s.web.context.ContextLoader            276 : Root WebApplicationContext: initialization completed in 3465 ms
+2017-04-10 21:13:04.174  INFO 15864--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'metricsFilter' to: [/*]
+2017-04-10 21:13:04.177  INFO 15864--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-10 21:13:04.178  INFO 15864--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-10 21:13:04.179  INFO 15864--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-10 21:13:04.180  INFO 15864--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-10 21:13:04.182  INFO 15864--- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean 258 : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-10 21:13:04.183  INFO 15864--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-04-10 21:13:04.186  INFO 15864--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-04-10 21:13:04.186  INFO 15864--- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  190 : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-10 21:13:04.693  WARN 15864--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 550 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+2017-04-10 21:13:04.701  INFO 15864--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Stopping service Tomcat
+2017-04-10 21:13:04.768  INFO 15864--- [  restartedMain] utoConfigurationReportLoggingInitializer 101 : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-10 21:13:04.773 ERROR 15864--- [  restartedMain] o.s.boot.SpringApplication               840 : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176)
+	at com.lalin.test.site.blog.mix.one.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.username(UserDetailsManagerConfigurer.java:111)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.access$200(UserDetailsManagerConfigurer.java:81)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer.withUser(UserDetailsManagerConfigurer.java:72)
+	at com.lalin.test.site.blog.mix.one.controller.SecurityConfig.configureGlobal(SecurityConfig.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:701)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 22 common frames omitted
+
+2017-04-10 21:14:07.625  INFO 13424--- [  restartedMain] c.l.test.site.blog.mix.one.Application   48 : Starting Application on FRZHAO-LT with PID 13424 (C:\Users\frzhao\workspace\IdeaProjects\BlogSite\mix-one\target\classes started by frzhao in C:\Users\frzhao\workspace\IdeaProjects\BlogSite)
+2017-04-10 21:14:07.631  INFO 13424--- [  restartedMain] c.l.test.site.blog.mix.one.Application   666 : The following profiles are active: dev
+2017-04-10 21:14:08.283  INFO 13424--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 582 : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6f4fe73f: startup date [Mon Apr 10 21:14:08 CST 2017]; root of context hierarchy
+2017-04-10 21:14:11.926  INFO 13424--- [  restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer 89 : Tomcat initialized with port(s): 8090 (http)
+2017-04-10 21:14:11.946  INFO 13424--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Starting service Tomcat
+2017-04-10 21:14:11.948  INFO 13424--- [  restartedMain] org.apache.catalina.core.StandardEngine  179 : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-10 21:14:12.096  INFO 13424--- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       179 : Initializing Spring embedded WebApplicationContext
+2017-04-10 21:14:12.097  INFO 13424--- [ost-startStop-1] o.s.web.context.ContextLoader            276 : Root WebApplicationContext: initialization completed in 3814 ms
+2017-04-10 21:14:12.725  INFO 13424--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'metricsFilter' to: [/*]
+2017-04-10 21:14:12.726  INFO 13424--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-10 21:14:12.727  INFO 13424--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-10 21:14:12.727  INFO 13424--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-10 21:14:12.727  INFO 13424--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-10 21:14:12.729  INFO 13424--- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean 258 : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-10 21:14:12.730  INFO 13424--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-04-10 21:14:12.730  INFO 13424--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-04-10 21:14:12.731  INFO 13424--- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  190 : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-10 21:14:13.571  WARN 13424--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 550 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+2017-04-10 21:14:13.587  INFO 13424--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Stopping service Tomcat
+2017-04-10 21:14:13.658  INFO 13424--- [  restartedMain] utoConfigurationReportLoggingInitializer 101 : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-10 21:14:13.664 ERROR 13424--- [  restartedMain] o.s.boot.SpringApplication               840 : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176)
+	at com.lalin.test.site.blog.mix.one.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.username(UserDetailsManagerConfigurer.java:111)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.access$200(UserDetailsManagerConfigurer.java:81)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer.withUser(UserDetailsManagerConfigurer.java:72)
+	at com.lalin.test.site.blog.mix.one.controller.SecurityConfig.configureGlobal(SecurityConfig.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:701)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 22 common frames omitted
+
+2017-04-10 21:21:10.618  INFO 3120--- [  restartedMain] c.l.test.site.blog.mix.one.Application   48 : Starting Application on FRZHAO-LT with PID 3120 (C:\Users\frzhao\workspace\IdeaProjects\BlogSite\mix-one\target\classes started by frzhao in C:\Users\frzhao\workspace\IdeaProjects\BlogSite)
+2017-04-10 21:21:10.624  INFO 3120--- [  restartedMain] c.l.test.site.blog.mix.one.Application   666 : The following profiles are active: dev
+2017-04-10 21:21:11.173  INFO 3120--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 582 : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@285abd15: startup date [Mon Apr 10 21:21:11 CST 2017]; root of context hierarchy
+2017-04-10 21:21:13.073  INFO 3120--- [  restartedMain] o.s.b.f.s.DefaultListableBeanFactory     828 : Overriding bean definition for bean 'ignoredPathsWebSecurityConfigurerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/security/SpringBootWebSecurityConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/ManagementWebSecurityAutoConfiguration.class]]
+2017-04-10 21:21:14.095  INFO 3120--- [  restartedMain] trationDelegate$BeanPostProcessorChecker 325 : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$5279a2be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 21:21:14.119  INFO 3120--- [  restartedMain] trationDelegate$BeanPostProcessorChecker 325 : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 21:21:14.124  INFO 3120--- [  restartedMain] trationDelegate$BeanPostProcessorChecker 325 : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5b54e72b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 21:21:14.132  INFO 3120--- [  restartedMain] trationDelegate$BeanPostProcessorChecker 325 : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$774e4570] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 21:21:14.146  INFO 3120--- [  restartedMain] trationDelegate$BeanPostProcessorChecker 325 : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 21:21:15.074  INFO 3120--- [  restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer 89 : Tomcat initialized with port(s): 8090 (http)
+2017-04-10 21:21:15.093  INFO 3120--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Starting service Tomcat
+2017-04-10 21:21:15.097  INFO 3120--- [  restartedMain] org.apache.catalina.core.StandardEngine  179 : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-10 21:21:15.237  INFO 3120--- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       179 : Initializing Spring embedded WebApplicationContext
+2017-04-10 21:21:15.237  INFO 3120--- [ost-startStop-1] o.s.web.context.ContextLoader            276 : Root WebApplicationContext: initialization completed in 4064 ms
+2017-04-10 21:21:15.761  INFO 3120--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'metricsFilter' to: [/*]
+2017-04-10 21:21:15.762  INFO 3120--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-10 21:21:15.762  INFO 3120--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-10 21:21:15.762  INFO 3120--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-10 21:21:15.763  INFO 3120--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-10 21:21:15.764  INFO 3120--- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean 258 : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-10 21:21:15.764  INFO 3120--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-04-10 21:21:15.765  INFO 3120--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-04-10 21:21:15.766  INFO 3120--- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  190 : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-10 21:21:16.243  WARN 3120--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 550 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+2017-04-10 21:21:16.247  INFO 3120--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Stopping service Tomcat
+2017-04-10 21:21:16.276  WARN 3120--- [  restartedMain] o.s.boot.SpringApplication               91 : Error handling failed (Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available)
+2017-04-10 21:21:16.285 ERROR 3120--- [  restartedMain] o.s.boot.SpringApplication               840 : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176)
+	at com.lalin.test.site.blog.mix.one.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.username(UserDetailsManagerConfigurer.java:111)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.access$200(UserDetailsManagerConfigurer.java:81)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer.withUser(UserDetailsManagerConfigurer.java:72)
+	at com.lalin.test.site.blog.mix.one.controller.SecurityConfig.configureGlobal(SecurityConfig.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:701)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 22 common frames omitted
+
+2017-04-10 21:39:32.994  INFO 14236--- [  restartedMain] c.l.test.site.blog.mix.one.Application   48 : Starting Application on FRZHAO-LT with PID 14236 (C:\Users\frzhao\workspace\IdeaProjects\BlogSite\mix-one\target\classes started by frzhao in C:\Users\frzhao\workspace\IdeaProjects\BlogSite)
+2017-04-10 21:39:33.002  INFO 14236--- [  restartedMain] c.l.test.site.blog.mix.one.Application   666 : The following profiles are active: dev
+2017-04-10 21:39:33.495  INFO 14236--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 582 : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6478164a: startup date [Mon Apr 10 21:39:33 CST 2017]; root of context hierarchy
+2017-04-10 21:39:36.984  INFO 14236--- [  restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer 89 : Tomcat initialized with port(s): 8090 (http)
+2017-04-10 21:39:36.999  INFO 14236--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Starting service Tomcat
+2017-04-10 21:39:37.001  INFO 14236--- [  restartedMain] org.apache.catalina.core.StandardEngine  179 : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-10 21:39:37.134  INFO 14236--- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       179 : Initializing Spring embedded WebApplicationContext
+2017-04-10 21:39:37.135  INFO 14236--- [ost-startStop-1] o.s.web.context.ContextLoader            276 : Root WebApplicationContext: initialization completed in 3640 ms
+2017-04-10 21:39:37.638  INFO 14236--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'metricsFilter' to: [/*]
+2017-04-10 21:39:37.639  INFO 14236--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-10 21:39:37.639  INFO 14236--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-10 21:39:37.640  INFO 14236--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-10 21:39:37.640  INFO 14236--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-10 21:39:37.642  INFO 14236--- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean 258 : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-10 21:39:37.643  INFO 14236--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-04-10 21:39:37.644  INFO 14236--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-04-10 21:39:37.644  INFO 14236--- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  190 : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-10 21:39:38.185  WARN 14236--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 550 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+2017-04-10 21:39:38.195  INFO 14236--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Stopping service Tomcat
+2017-04-10 21:39:38.224  INFO 14236--- [  restartedMain] utoConfigurationReportLoggingInitializer 101 : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-10 21:39:38.231 ERROR 14236--- [  restartedMain] o.s.boot.SpringApplication               840 : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176)
+	at com.lalin.test.site.blog.mix.one.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.username(UserDetailsManagerConfigurer.java:111)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.access$200(UserDetailsManagerConfigurer.java:81)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer.withUser(UserDetailsManagerConfigurer.java:72)
+	at com.lalin.test.site.blog.mix.one.controller.SecurityConfig.configureGlobal(SecurityConfig.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:701)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 22 common frames omitted
+
+2017-04-10 22:30:50.592  INFO 10452--- [  restartedMain] c.l.test.site.blog.mix.one.Application   48 : Starting Application on FRZHAO-LT with PID 10452 (C:\Users\frzhao\workspace\IdeaProjects\BlogSite\mix-one\target\classes started by frzhao in C:\Users\frzhao\workspace\IdeaProjects\BlogSite)
+2017-04-10 22:30:50.598  INFO 10452--- [  restartedMain] c.l.test.site.blog.mix.one.Application   666 : The following profiles are active: dev
+2017-04-10 22:30:51.017  INFO 10452--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 582 : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f8a567b: startup date [Mon Apr 10 22:30:51 CST 2017]; root of context hierarchy
+2017-04-10 22:30:54.496  INFO 10452--- [  restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer 89 : Tomcat initialized with port(s): 8090 (http)
+2017-04-10 22:30:54.518  INFO 10452--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Starting service Tomcat
+2017-04-10 22:30:54.521  INFO 10452--- [  restartedMain] org.apache.catalina.core.StandardEngine  179 : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-10 22:30:54.667  INFO 10452--- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       179 : Initializing Spring embedded WebApplicationContext
+2017-04-10 22:30:54.668  INFO 10452--- [ost-startStop-1] o.s.web.context.ContextLoader            276 : Root WebApplicationContext: initialization completed in 3651 ms
+2017-04-10 22:30:55.186  INFO 10452--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'metricsFilter' to: [/*]
+2017-04-10 22:30:55.187  INFO 10452--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-10 22:30:55.188  INFO 10452--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-10 22:30:55.188  INFO 10452--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-10 22:30:55.188  INFO 10452--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-10 22:30:55.190  INFO 10452--- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean 258 : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-10 22:30:55.191  INFO 10452--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-04-10 22:30:55.192  INFO 10452--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-04-10 22:30:55.192  INFO 10452--- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  190 : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-10 22:30:55.740  WARN 10452--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 550 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+2017-04-10 22:30:55.747  INFO 10452--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Stopping service Tomcat
+2017-04-10 22:30:55.792  INFO 10452--- [  restartedMain] utoConfigurationReportLoggingInitializer 101 : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-10 22:30:55.806 ERROR 10452--- [  restartedMain] o.s.boot.SpringApplication               840 : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176)
+	at com.lalin.test.site.blog.mix.one.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.username(UserDetailsManagerConfigurer.java:111)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.access$200(UserDetailsManagerConfigurer.java:81)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer.withUser(UserDetailsManagerConfigurer.java:72)
+	at com.lalin.test.site.blog.mix.one.controller.SecurityConfig.configureGlobal(SecurityConfig.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:701)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 22 common frames omitted
+
+2017-04-10 22:34:15.542  INFO 12368--- [  restartedMain] c.l.test.site.blog.mix.one.Application   48 : Starting Application on FRZHAO-LT with PID 12368 (C:\Users\frzhao\workspace\IdeaProjects\BlogSite\mix-one\target\classes started by frzhao in C:\Users\frzhao\workspace\IdeaProjects\BlogSite)
+2017-04-10 22:34:15.547  INFO 12368--- [  restartedMain] c.l.test.site.blog.mix.one.Application   666 : The following profiles are active: dev
+2017-04-10 22:34:16.101  INFO 12368--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 582 : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6a1dc74f: startup date [Mon Apr 10 22:34:16 CST 2017]; root of context hierarchy
+2017-04-10 22:34:19.592  INFO 12368--- [  restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer 89 : Tomcat initialized with port(s): 8090 (http)
+2017-04-10 22:34:19.616  INFO 12368--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Starting service Tomcat
+2017-04-10 22:34:19.618  INFO 12368--- [  restartedMain] org.apache.catalina.core.StandardEngine  179 : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-10 22:34:19.759  INFO 12368--- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       179 : Initializing Spring embedded WebApplicationContext
+2017-04-10 22:34:19.759  INFO 12368--- [ost-startStop-1] o.s.web.context.ContextLoader            276 : Root WebApplicationContext: initialization completed in 3658 ms
+2017-04-10 22:34:20.254  INFO 12368--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'metricsFilter' to: [/*]
+2017-04-10 22:34:20.255  INFO 12368--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-10 22:34:20.256  INFO 12368--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-10 22:34:20.256  INFO 12368--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-10 22:34:20.256  INFO 12368--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-10 22:34:20.258  INFO 12368--- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean 258 : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-10 22:34:20.259  INFO 12368--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-04-10 22:34:20.259  INFO 12368--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-04-10 22:34:20.260  INFO 12368--- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  190 : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-10 22:34:20.785  WARN 12368--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 550 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+2017-04-10 22:34:20.790  INFO 12368--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Stopping service Tomcat
+2017-04-10 22:34:20.828  INFO 12368--- [  restartedMain] utoConfigurationReportLoggingInitializer 101 : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-10 22:34:20.835 ERROR 12368--- [  restartedMain] o.s.boot.SpringApplication               840 : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176)
+	at com.lalin.test.site.blog.mix.one.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.username(UserDetailsManagerConfigurer.java:111)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.access$200(UserDetailsManagerConfigurer.java:81)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer.withUser(UserDetailsManagerConfigurer.java:72)
+	at com.lalin.test.site.blog.mix.one.controller.SecurityConfig.configureGlobal(SecurityConfig.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:701)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 22 common frames omitted
+
+2017-04-10 22:38:56.532  INFO 9452--- [  restartedMain] c.l.test.site.blog.mix.one.Application   48 : Starting Application on FRZHAO-LT with PID 9452 (C:\Users\frzhao\workspace\IdeaProjects\BlogSite\mix-one\target\classes started by frzhao in C:\Users\frzhao\workspace\IdeaProjects\BlogSite)
+2017-04-10 22:38:56.542  INFO 9452--- [  restartedMain] c.l.test.site.blog.mix.one.Application   666 : The following profiles are active: dev
+2017-04-10 22:38:57.043  INFO 9452--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 582 : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@654f7331: startup date [Mon Apr 10 22:38:57 CST 2017]; root of context hierarchy
+2017-04-10 22:39:00.910  INFO 9452--- [  restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer 89 : Tomcat initialized with port(s): 8090 (http)
+2017-04-10 22:39:00.937  INFO 9452--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Starting service Tomcat
+2017-04-10 22:39:00.941  INFO 9452--- [  restartedMain] org.apache.catalina.core.StandardEngine  179 : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-10 22:39:01.070  INFO 9452--- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       179 : Initializing Spring embedded WebApplicationContext
+2017-04-10 22:39:01.071  INFO 9452--- [ost-startStop-1] o.s.web.context.ContextLoader            276 : Root WebApplicationContext: initialization completed in 4028 ms
+2017-04-10 22:39:01.722  INFO 9452--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'metricsFilter' to: [/*]
+2017-04-10 22:39:01.723  INFO 9452--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-10 22:39:01.723  INFO 9452--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-10 22:39:01.723  INFO 9452--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-10 22:39:01.724  INFO 9452--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-10 22:39:01.725  INFO 9452--- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean 258 : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-10 22:39:01.726  INFO 9452--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-04-10 22:39:01.726  INFO 9452--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-04-10 22:39:01.727  INFO 9452--- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  190 : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-10 22:39:02.392  WARN 9452--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 550 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+2017-04-10 22:39:02.400  INFO 9452--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Stopping service Tomcat
+2017-04-10 22:39:02.446  INFO 9452--- [  restartedMain] utoConfigurationReportLoggingInitializer 101 : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-10 22:39:02.476 ERROR 9452--- [  restartedMain] o.s.boot.SpringApplication               840 : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176)
+	at com.lalin.test.site.blog.mix.one.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.username(UserDetailsManagerConfigurer.java:111)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.access$200(UserDetailsManagerConfigurer.java:81)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer.withUser(UserDetailsManagerConfigurer.java:72)
+	at com.lalin.test.site.blog.mix.one.controller.SecurityConfig.configureGlobal(SecurityConfig.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:701)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 22 common frames omitted
+
+2017-04-10 22:40:45.378  INFO 2500--- [  restartedMain] c.l.test.site.blog.mix.one.Application   48 : Starting Application on FRZHAO-LT with PID 2500 (C:\Users\frzhao\workspace\IdeaProjects\BlogSite\mix-one\target\classes started by frzhao in C:\Users\frzhao\workspace\IdeaProjects\BlogSite)
+2017-04-10 22:40:45.383  INFO 2500--- [  restartedMain] c.l.test.site.blog.mix.one.Application   666 : The following profiles are active: dev
+2017-04-10 22:40:45.827  INFO 2500--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 582 : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@707f1af: startup date [Mon Apr 10 22:40:45 CST 2017]; root of context hierarchy
+2017-04-10 22:40:49.304  INFO 2500--- [  restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer 89 : Tomcat initialized with port(s): 8090 (http)
+2017-04-10 22:40:49.327  INFO 2500--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Starting service Tomcat
+2017-04-10 22:40:49.329  INFO 2500--- [  restartedMain] org.apache.catalina.core.StandardEngine  179 : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-10 22:40:49.464  INFO 2500--- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       179 : Initializing Spring embedded WebApplicationContext
+2017-04-10 22:40:49.465  INFO 2500--- [ost-startStop-1] o.s.web.context.ContextLoader            276 : Root WebApplicationContext: initialization completed in 3638 ms
+2017-04-10 22:40:49.963  INFO 2500--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'metricsFilter' to: [/*]
+2017-04-10 22:40:49.964  INFO 2500--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-10 22:40:49.965  INFO 2500--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-10 22:40:49.965  INFO 2500--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-10 22:40:49.966  INFO 2500--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-10 22:40:49.968  INFO 2500--- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean 258 : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-10 22:40:49.969  INFO 2500--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-04-10 22:40:49.969  INFO 2500--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-04-10 22:40:49.969  INFO 2500--- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  190 : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-10 22:40:50.457  WARN 2500--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 550 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+2017-04-10 22:40:50.461  INFO 2500--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Stopping service Tomcat
+2017-04-10 22:40:50.488  INFO 2500--- [  restartedMain] utoConfigurationReportLoggingInitializer 101 : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-10 22:40:50.496 ERROR 2500--- [  restartedMain] o.s.boot.SpringApplication               840 : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176)
+	at com.lalin.test.site.blog.mix.one.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.username(UserDetailsManagerConfigurer.java:111)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.access$200(UserDetailsManagerConfigurer.java:81)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer.withUser(UserDetailsManagerConfigurer.java:72)
+	at com.lalin.test.site.blog.mix.one.controller.SecurityConfig.configureGlobal(SecurityConfig.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:701)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 22 common frames omitted
+
+2017-04-10 22:43:43.728  INFO 14724--- [  restartedMain] c.l.test.site.blog.mix.one.Application   48 : Starting Application on FRZHAO-LT with PID 14724 (C:\Users\frzhao\workspace\IdeaProjects\BlogSite\mix-one\target\classes started by frzhao in C:\Users\frzhao\workspace\IdeaProjects\BlogSite)
+2017-04-10 22:43:43.733  INFO 14724--- [  restartedMain] c.l.test.site.blog.mix.one.Application   666 : The following profiles are active: dev
+2017-04-10 22:43:44.196  INFO 14724--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 582 : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@707f1af: startup date [Mon Apr 10 22:43:44 CST 2017]; root of context hierarchy
+2017-04-10 22:43:47.615  INFO 14724--- [  restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer 89 : Tomcat initialized with port(s): 8090 (http)
+2017-04-10 22:43:47.634  INFO 14724--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Starting service Tomcat
+2017-04-10 22:43:47.637  INFO 14724--- [  restartedMain] org.apache.catalina.core.StandardEngine  179 : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-10 22:43:47.769  INFO 14724--- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       179 : Initializing Spring embedded WebApplicationContext
+2017-04-10 22:43:47.770  INFO 14724--- [ost-startStop-1] o.s.web.context.ContextLoader            276 : Root WebApplicationContext: initialization completed in 3575 ms
+2017-04-10 22:43:48.273  INFO 14724--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'metricsFilter' to: [/*]
+2017-04-10 22:43:48.275  INFO 14724--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-10 22:43:48.276  INFO 14724--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-10 22:43:48.284  INFO 14724--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-10 22:43:48.285  INFO 14724--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-10 22:43:48.287  INFO 14724--- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean 258 : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-10 22:43:48.288  INFO 14724--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-04-10 22:43:48.288  INFO 14724--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-04-10 22:43:48.289  INFO 14724--- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  190 : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-10 22:43:49.091  INFO 14724--- [  restartedMain] b.a.s.AuthenticationManagerConfiguration 169 : 
+
+Using default security password: 4b0104d3-6ab8-44db-b431-6f80e2820d1c
+
+2017-04-10 22:43:49.097  WARN 14724--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 550 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+2017-04-10 22:43:49.107  INFO 14724--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Stopping service Tomcat
+2017-04-10 22:43:49.144  INFO 14724--- [  restartedMain] utoConfigurationReportLoggingInitializer 101 : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-10 22:43:49.153 ERROR 14724--- [  restartedMain] o.s.boot.SpringApplication               840 : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176)
+	at com.lalin.test.site.blog.mix.one.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 25 common frames omitted
+Caused by: java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.username(UserDetailsManagerConfigurer.java:111)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.access$200(UserDetailsManagerConfigurer.java:81)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer.withUser(UserDetailsManagerConfigurer.java:72)
+	at org.springframework.boot.autoconfigure.security.AuthenticationManagerConfiguration$DefaultInMemoryUserDetailsManagerConfigurer.configure(AuthenticationManagerConfiguration.java:173)
+	at org.springframework.boot.autoconfigure.security.AuthenticationManagerConfiguration$DefaultInMemoryUserDetailsManagerConfigurer.configure(AuthenticationManagerConfiguration.java:152)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.configure(AbstractConfiguredSecurityBuilder.java:384)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:330)
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41)
+	at org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration.getAuthenticationManager(AuthenticationConfiguration.java:105)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.authenticationManager(WebSecurityConfigurerAdapter.java:262)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.getHttp(WebSecurityConfigurerAdapter.java:195)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:315)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:86)
+	at com.lalin.test.site.blog.mix.one.controller.SecurityConfig$$EnhancerBySpringCGLIB$$3a87bcfd.init(<generated>)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:371)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:325)
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:104)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$d91e7a33.CGLIB$springSecurityFilterChain$5(<generated>)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$d91e7a33$$FastClassBySpringCGLIB$$8327affe.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$d91e7a33.springSecurityFilterChain(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 26 common frames omitted
+
+2017-04-10 22:44:20.764  INFO 13008--- [  restartedMain] c.l.test.site.blog.mix.one.Application   48 : Starting Application on FRZHAO-LT with PID 13008 (C:\Users\frzhao\workspace\IdeaProjects\BlogSite\mix-one\target\classes started by frzhao in C:\Users\frzhao\workspace\IdeaProjects\BlogSite)
+2017-04-10 22:44:20.771  INFO 13008--- [  restartedMain] c.l.test.site.blog.mix.one.Application   666 : The following profiles are active: dev
+2017-04-10 22:44:21.476  INFO 13008--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 582 : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6490860c: startup date [Mon Apr 10 22:44:21 CST 2017]; root of context hierarchy
+2017-04-10 22:44:25.137  INFO 13008--- [  restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer 89 : Tomcat initialized with port(s): 8090 (http)
+2017-04-10 22:44:25.155  INFO 13008--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Starting service Tomcat
+2017-04-10 22:44:25.158  INFO 13008--- [  restartedMain] org.apache.catalina.core.StandardEngine  179 : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-10 22:44:25.293  INFO 13008--- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       179 : Initializing Spring embedded WebApplicationContext
+2017-04-10 22:44:25.294  INFO 13008--- [ost-startStop-1] o.s.web.context.ContextLoader            276 : Root WebApplicationContext: initialization completed in 3818 ms
+2017-04-10 22:44:25.792  INFO 13008--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'metricsFilter' to: [/*]
+2017-04-10 22:44:25.793  INFO 13008--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-10 22:44:25.794  INFO 13008--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-10 22:44:25.794  INFO 13008--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-10 22:44:25.795  INFO 13008--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-10 22:44:25.797  INFO 13008--- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean 258 : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-10 22:44:25.798  INFO 13008--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-04-10 22:44:25.798  INFO 13008--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-04-10 22:44:25.799  INFO 13008--- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  190 : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-10 22:44:26.341  WARN 13008--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 550 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+2017-04-10 22:44:26.348  INFO 13008--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Stopping service Tomcat
+2017-04-10 22:44:26.384  INFO 13008--- [  restartedMain] utoConfigurationReportLoggingInitializer 101 : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-10 22:44:26.389 ERROR 13008--- [  restartedMain] o.s.boot.SpringApplication               840 : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityConfig': Injection of autowired dependencies failed; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1264)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:553)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176)
+	at com.lalin.test.site.blog.mix.one.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.username(UserDetailsManagerConfigurer.java:111)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.access$200(UserDetailsManagerConfigurer.java:81)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer.withUser(UserDetailsManagerConfigurer.java:72)
+	at com.lalin.test.site.blog.mix.one.controller.SecurityConfig.configureGlobal(SecurityConfig.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:701)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:366)
+	... 22 common frames omitted
+
+2017-04-10 22:44:55.759  INFO 16040--- [  restartedMain] c.l.test.site.blog.mix.one.Application   48 : Starting Application on FRZHAO-LT with PID 16040 (C:\Users\frzhao\workspace\IdeaProjects\BlogSite\mix-one\target\classes started by frzhao in C:\Users\frzhao\workspace\IdeaProjects\BlogSite)
+2017-04-10 22:44:55.767  INFO 16040--- [  restartedMain] c.l.test.site.blog.mix.one.Application   666 : The following profiles are active: dev
+2017-04-10 22:44:56.236  INFO 16040--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 582 : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1f9cc872: startup date [Mon Apr 10 22:44:56 CST 2017]; root of context hierarchy
+2017-04-10 22:44:58.977  INFO 16040--- [  restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer 89 : Tomcat initialized with port(s): 8090 (http)
+2017-04-10 22:44:58.995  INFO 16040--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Starting service Tomcat
+2017-04-10 22:44:58.997  INFO 16040--- [  restartedMain] org.apache.catalina.core.StandardEngine  179 : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-10 22:44:59.124  INFO 16040--- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       179 : Initializing Spring embedded WebApplicationContext
+2017-04-10 22:44:59.125  INFO 16040--- [ost-startStop-1] o.s.web.context.ContextLoader            276 : Root WebApplicationContext: initialization completed in 2889 ms
+2017-04-10 22:44:59.592  INFO 16040--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'metricsFilter' to: [/*]
+2017-04-10 22:44:59.593  INFO 16040--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-10 22:44:59.593  INFO 16040--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-10 22:44:59.594  INFO 16040--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-10 22:44:59.594  INFO 16040--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-10 22:44:59.596  INFO 16040--- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean 258 : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-10 22:44:59.597  INFO 16040--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-04-10 22:44:59.598  INFO 16040--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-04-10 22:44:59.599  INFO 16040--- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  190 : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-10 22:45:00.154  INFO 16040--- [  restartedMain] b.a.s.AuthenticationManagerConfiguration 169 : 
+
+Using default security password: eb76abc9-7a58-48e2-ad72-748171477b5e
+
+2017-04-10 22:45:00.158  WARN 16040--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 550 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+2017-04-10 22:45:00.163  INFO 16040--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Stopping service Tomcat
+2017-04-10 22:45:00.188  INFO 16040--- [  restartedMain] utoConfigurationReportLoggingInitializer 101 : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-10 22:45:00.196 ERROR 16040--- [  restartedMain] o.s.boot.SpringApplication               840 : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176)
+	at com.lalin.test.site.blog.mix.one.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 25 common frames omitted
+Caused by: java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.username(UserDetailsManagerConfigurer.java:111)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.access$200(UserDetailsManagerConfigurer.java:81)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer.withUser(UserDetailsManagerConfigurer.java:72)
+	at org.springframework.boot.autoconfigure.security.AuthenticationManagerConfiguration$DefaultInMemoryUserDetailsManagerConfigurer.configure(AuthenticationManagerConfiguration.java:173)
+	at org.springframework.boot.autoconfigure.security.AuthenticationManagerConfiguration$DefaultInMemoryUserDetailsManagerConfigurer.configure(AuthenticationManagerConfiguration.java:152)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.configure(AbstractConfiguredSecurityBuilder.java:384)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:330)
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41)
+	at org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration.getAuthenticationManager(AuthenticationConfiguration.java:105)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.authenticationManager(WebSecurityConfigurerAdapter.java:262)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.getHttp(WebSecurityConfigurerAdapter.java:195)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:315)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:86)
+	at com.lalin.test.site.blog.mix.one.controller.SecurityConfig$$EnhancerBySpringCGLIB$$65c3850f.init(<generated>)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:371)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:325)
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:104)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$45a4245.CGLIB$springSecurityFilterChain$6(<generated>)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$45a4245$$FastClassBySpringCGLIB$$5f1d35f4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$45a4245.springSecurityFilterChain(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 26 common frames omitted
+
+2017-04-10 22:45:32.155  INFO 13292--- [  restartedMain] c.l.test.site.blog.mix.one.Application   48 : Starting Application on FRZHAO-LT with PID 13292 (C:\Users\frzhao\workspace\IdeaProjects\BlogSite\mix-one\target\classes started by frzhao in C:\Users\frzhao\workspace\IdeaProjects\BlogSite)
+2017-04-10 22:45:32.160  INFO 13292--- [  restartedMain] c.l.test.site.blog.mix.one.Application   666 : The following profiles are active: dev
+2017-04-10 22:45:32.631  INFO 13292--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 582 : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6127890b: startup date [Mon Apr 10 22:45:32 CST 2017]; root of context hierarchy
+2017-04-10 22:45:34.362  INFO 13292--- [  restartedMain] o.s.b.f.s.DefaultListableBeanFactory     828 : Overriding bean definition for bean 'ignoredPathsWebSecurityConfigurerAdapter' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/security/SpringBootWebSecurityConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/ManagementWebSecurityAutoConfiguration.class]]
+2017-04-10 22:45:36.021  INFO 13292--- [  restartedMain] s.b.c.e.t.TomcatEmbeddedServletContainer 89 : Tomcat initialized with port(s): 8090 (http)
+2017-04-10 22:45:36.039  INFO 13292--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Starting service Tomcat
+2017-04-10 22:45:36.040  INFO 13292--- [  restartedMain] org.apache.catalina.core.StandardEngine  179 : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-10 22:45:36.176  INFO 13292--- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       179 : Initializing Spring embedded WebApplicationContext
+2017-04-10 22:45:36.177  INFO 13292--- [ost-startStop-1] o.s.web.context.ContextLoader            276 : Root WebApplicationContext: initialization completed in 3546 ms
+2017-04-10 22:45:36.749  INFO 13292--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'metricsFilter' to: [/*]
+2017-04-10 22:45:36.750  INFO 13292--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-10 22:45:36.751  INFO 13292--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-10 22:45:36.751  INFO 13292--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-10 22:45:36.752  INFO 13292--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-10 22:45:36.754  INFO 13292--- [ost-startStop-1] .s.DelegatingFilterProxyRegistrationBean 258 : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2017-04-10 22:45:36.755  INFO 13292--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-04-10 22:45:36.755  INFO 13292--- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   258 : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-04-10 22:45:36.756  INFO 13292--- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  190 : Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-10 22:45:37.267  INFO 13292--- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter 534 : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6127890b: startup date [Mon Apr 10 22:45:32 CST 2017]; root of context hierarchy
+2017-04-10 22:45:37.470  INFO 13292--- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping 543 : Mapped "{[/],methods=[GET || POST]}" onto public java.lang.String com.lalin.test.site.blog.mix.one.controller.IndexController.root()
+2017-04-10 22:45:37.472  INFO 13292--- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping 543 : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.lalin.test.site.blog.mix.one.controller.IndexController.home(org.springframework.ui.Model)
+2017-04-10 22:45:37.473  INFO 13292--- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping 543 : Mapped "{[/login]}" onto public java.lang.String com.lalin.test.site.blog.mix.one.controller.IndexController.login()
+2017-04-10 22:45:37.473  INFO 13292--- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping 543 : Mapped "{[/login-error]}" onto public java.lang.String com.lalin.test.site.blog.mix.one.controller.IndexController.loginError(org.springframework.ui.Model)
+2017-04-10 22:45:37.473  INFO 13292--- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping 543 : Mapped "{[/logined]}" onto public java.lang.String com.lalin.test.site.blog.mix.one.controller.IndexController.userIndex()
+2017-04-10 22:45:37.478  INFO 13292--- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping 543 : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-10 22:45:37.478  INFO 13292--- [  restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping 543 : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-10 22:45:37.550  INFO 13292--- [  restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  362 : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-10 22:45:37.551  INFO 13292--- [  restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  362 : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-10 22:45:37.650  INFO 13292--- [  restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  362 : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-10 22:45:38.757  INFO 13292--- [  restartedMain] b.a.s.AuthenticationManagerConfiguration 169 : 
+
+Using default security password: d1f0d6f8-eee2-4d63-aa2e-ab74c59e7649
+
+2017-04-10 22:45:38.760  WARN 13292--- [  restartedMain] ationConfigEmbeddedWebApplicationContext 550 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+2017-04-10 22:45:38.765  INFO 13292--- [  restartedMain] o.apache.catalina.core.StandardService   179 : Stopping service Tomcat
+2017-04-10 22:45:38.790  INFO 13292--- [  restartedMain] utoConfigurationReportLoggingInitializer 101 : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-04-10 22:45:38.800 ERROR 13292--- [  restartedMain] o.s.boot.SpringApplication               840 : Application startup failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springSecurityFilterChain' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:296)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:866)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:542)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:762)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:372)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1187)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1176)
+	at com.lalin.test.site.blog.mix.one.Application.main(Application.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.servlet.Filter]: Factory method 'springSecurityFilterChain' threw exception; nested exception is java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 25 common frames omitted
+Caused by: java.lang.NoSuchMethodError: org.springframework.security.core.userdetails.User.withUsername(Ljava/lang/String;)Lorg/springframework/security/core/userdetails/User$UserBuilder;
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.username(UserDetailsManagerConfigurer.java:111)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer$UserDetailsBuilder.access$200(UserDetailsManagerConfigurer.java:81)
+	at org.springframework.security.config.annotation.authentication.configurers.provisioning.UserDetailsManagerConfigurer.withUser(UserDetailsManagerConfigurer.java:72)
+	at org.springframework.boot.autoconfigure.security.AuthenticationManagerConfiguration$DefaultInMemoryUserDetailsManagerConfigurer.configure(AuthenticationManagerConfiguration.java:173)
+	at org.springframework.boot.autoconfigure.security.AuthenticationManagerConfiguration$DefaultInMemoryUserDetailsManagerConfigurer.configure(AuthenticationManagerConfiguration.java:152)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.configure(AbstractConfiguredSecurityBuilder.java:384)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:330)
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41)
+	at org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration.getAuthenticationManager(AuthenticationConfiguration.java:105)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.authenticationManager(WebSecurityConfigurerAdapter.java:262)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.getHttp(WebSecurityConfigurerAdapter.java:195)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:315)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter.init(WebSecurityConfigurerAdapter.java:86)
+	at org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration$ManagementWebSecurityConfigurerAdapter$$EnhancerBySpringCGLIB$$d0e5bd46.init(<generated>)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.init(AbstractConfiguredSecurityBuilder.java:371)
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:325)
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:41)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.springSecurityFilterChain(WebSecurityConfiguration.java:104)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$eeac16df.CGLIB$springSecurityFilterChain$2(<generated>)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$eeac16df$$FastClassBySpringCGLIB$$54642554.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:358)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$$EnhancerBySpringCGLIB$$eeac16df.springSecurityFilterChain(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 26 common frames omitted
+
