@@ -4,6 +4,7 @@ import com.lalin.test.site.blog.mix.one.utils.TimeFormatUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -35,19 +36,29 @@ public class IndexController {
     }
 
 
-    @RequestMapping("/logined")
-    public String userIndex() {
-        return "logined";
+    @RequestMapping("/haveLog")
+    public String haveLog() {
+        return "index/haveLog";
     }
 
     @RequestMapping("/login")
     public String login() {
-        return "login";
+        return "index/login";
     }
 
     @RequestMapping("/login-error")
     public String loginError(Model model) {
         model.addAttribute("loginError", true);
-        return "login";
+        return "index/login";
+    }
+ /*   @PostMapping("/register")
+    public String registerThen() {
+        return "index/home";
+    }*/
+    @RequestMapping("/home")
+    public String register(Model model) {
+        SimpleDateFormat formatter = TimeFormatUtil.getFormatter(TimeFormatUtil.EXTENDED_CALENDAR_DATES_TIMES);
+        model.addAttribute("dataTime", formatter.format(new Date()));
+        return "index/home";
     }
 }
